@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu portal de vídeos</title>
+</head>
+
+<body>
+  <h1>Vídeos hosteados internamente</h1>
+  <p>Este vídeo foi hosteado no nosso próprio servidor.</p>
+  <video controls poster="imagens/majino.png">
+    <p>Lamentamos mas não pudemos carregar o seu vídeo.</p>
+    <source src="midia/guile-theme.mp4" type="video/mp4">
+  </video>
+
+  <h1>Vídeos hosteados no YouTube</h1>
+  <p>Este vídeo está hosteado no YouTube.</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/eNIBie_uYMI?si=iB6GnAh1F3LgVnm3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h1>Vídeos hosteados no Vimeo</h1>
+  <p>Este vídeo está hosteado no Vimeo.</p>
+  <iframe src="https://player.vimeo.com/video/690993518?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Pigeon | 비둘기"></iframe>
+</body>
+</html>

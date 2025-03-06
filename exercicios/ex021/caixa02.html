@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+    body {
+      background-color: dimgray;
+      margin: 0px;
+      padding: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background-color: dodgerblue;
+      color: white;
+      padding: 1px 5px 10px 5px;
+    }
+
+    header > h1 {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    header > nav {
+      margin-left: 20px
+    }
+
+    header > nav > a {
+      margin: 0px;
+      color: lightyellow;
+      text-decoration: none;
+    }
+
+    /* SELECIONA O LINK DA DIREITA QUANDO TEM 2 LINKS, UM DO LADO DO OUTRO */
+    /* ALSO TRY SPAN ~ SPAN (tilde) */
+    header > nav > a + a {
+      margin-left: 1em;
+    }
+
+    header > nav > a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      margin: 10px;
+    }
+
+    section#topicos {
+      background-color: white;
+      padding: 1px 10px;
+      margin: 5px 0px;
+      border-radius: 5px;
+    }
+
+    section#topicos > p > span:hover {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    section > article {
+      background-color: white;
+      padding: 1px 10px;
+      margin: 10px 0px;
+    }
+
+    section > article > h1 {
+      background-color: steelblue;
+      color: lightyellow;
+      width: fit-content;
+      padding: 10px;
+      margin: 16px 16px 16px 0px;
+      border-radius: 12px;
+      border-top-left-radius: 0px;
+      box-shadow: 2px 2px 3px rgba(83, 83, 83, 0.561);
+      font-size: 1.5em;
+    }
+
+    section > article > p {
+      text-indent: 1em;
+    }
+
+    article:hover {
+      background-color: aliceblue;
+      outline: 2px solid black;
+    }
+
+    article > aside {
+      text-align: right;
+    }
+
+    .nome {
+      font-weight: bold;
+    }
+
+    time {
+      font-style: italic;
+    }
+
+    footer {
+      background-color: steelblue;
+      color: white;
+      margin-top: 10px;
+      padding: 1px 10px;
+      border-top: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Coluna do Povo</h1>
+    <nav>
+      <!-- SE BOTAR NEWLINE ENTRE ELES, APARECE UM ESPAÇO NA PÁGINA -->
+      <a href="#">Link</a><a href="#">Link</a><a href="#">Link</a><a href="#">Link</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="topicos">
+      <p><span>Política</span> <span>Esportes</span> <span>Tecnologia</span> <span>Viagens</span></p>
+    </section>
+    <section id="noticias">
+      <article>
+        <h1>Lula admite ser Bolsonaro reincarnado por aliens</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore ad tempore id commodi blanditiis rerum repellendus quaerat! Veniam neque numquam at dolore iusto illo voluptas est harum, quasi veritatis dolor culpa. Tenetur odit illo sunt labore consectetur quae repellendus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dolor harum consequuntur corrupti ex fuga pariatur tempore cum beatae deserunt ea illo facere tenetur repellendus quia aliquam ducimus, dolorum inventore. Amet consequatur accusamus culpa, illo, qui adipisci voluptate, iure nihil minima error doloribus eaque ad laborum quibusdam unde autem! Consectetur quisquam libero ab quibusdam cupiditate earum quos voluptatum ducimus ipsum officiis tempore expedita dolorum reiciendis, suscipit quo laudantium aliquam autem voluptates architecto deserunt quia quod! Eveniet ea assumenda laborum maiores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nemo provident ratione aperiam dolores voluptatem id dolorem dolor perferendis laboriosam! Saepe, amet? Optio nemo, iste quisquam iure perferendis dolor minus?</p>
+        <aside>Escrito por <span class="nome">Zeca Gado</span>, <time datetime="2025-03-02 12:15:41" title="2025-03-02 12:15:41">2 de Março</time></aside>
+      </article>
+      <article>
+        <h1>Entenda como fazer um Caixa 2: rápido, prático e barato</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolor magnam asperiores rerum. Eaque expedita dignissimos ullam est facere nisi velit repellendus, eligendi eius veritatis reiciendis ad tempora perferendis impedit quae rerum quas, minus laudantium ipsa voluptatum sit aut ab! Veniam soluta hic tenetur similique magnam totam adipisci. Labore, non!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quas nihil odit iste voluptatum veniam. Laboriosam error quos esse, iste sequi tenetur, animi debitis vel fugit nesciunt, corrupti aliquid cum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, placeat non quis nam aliquam nisi? Nihil nisi ratione voluptatum accusantium, voluptas esse blanditiis expedita voluptate ducimus doloribus vel earum architecto, laudantium alias facilis obcaecati quasi, magni quisquam atque eaque praesentium corporis quam ea? Eum distinctio, consectetur in dolor voluptate libero.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae commodi eum inventore neque reprehenderit sed incidunt ipsam exercitationem placeat obcaecati debitis, nemo dolore, omnis illum eos praesentium! Laboriosam, vero nobis!</p>
+        <aside>Escrito por <span class="nome">Paula Tejano</span>, <time datetime="2025-02-27 18:23:02" title="2025-02-27 18:23:02">27 de Fevereiro</time></aside>
+      </article>
+      <article>
+        <h1>Alto nível de desemprego vinculado a homem com 42.000 empregos</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, harum nisi. Odio tenetur quaerat ipsam quas iusto optio ex nobis aspernatur maxime neque aliquid, in libero quod obcaecati repellendus consequatur assumenda quis alias ullam voluptatibus ad. Debitis fugit ullam eos, quaerat doloribus nam officia non facere ex tenetur est minima illum, vero excepturi voluptas adipisci nulla iusto fugiat commodi distinctio. Veritatis a impedit, quis delectus animi placeat harum aperiam quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore facilis nemo a eos delectus recusandae vel voluptate eum, quis sit soluta quos, aut illo. Officia reiciendis aperiam corrupti omnis commodi aliquid hic inventore esse repellendus facilis error, ad odio consequatur earum, cumque a id sapiente, fugit deserunt quia voluptatibus nobis eum vitae. Enim hic ea, et eligendi expedita aut sit blanditiis nam vitae voluptatibus non quo? Consequuntur corrupti officia libero!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam autem perspiciatis debitis iusto consectetur dicta nam enim iure atque sapiente facilis, ducimus quaerat beatae tempore doloremque quis iste alias explicabo praesentium ab quibusdam! Vitae odit ea consequuntur error ipsam!</p>
+        <aside>Escrito por <span class="nome">Aquino Rego</span>, <time datetime="2025-02-18 19:24:52" title="2025-02-18 19:24:52">18 de Fevereiro</time></aside>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Site da Coluna do Povo&trade;</p>
+    <p>Direitos reservados, 2025</p>
+  </footer>
+</body>
+</html>
