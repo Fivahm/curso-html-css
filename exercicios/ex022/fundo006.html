@@ -7,20 +7,26 @@
   <style>
     body {
       /* ALTURA DO BODY VAI SER 100% DA VIEWPORT (HEIGHT) */
-      height: 100vh;
+      /* height: 100vh; */
       /* CONSIDERAR A BACKGROUND-COLOR MESMO QUANDO USANDO UMA IMAGEM DE FUNDO */
-      background-color: black;
+      /* background-color: black;
       background-image: url('imagens/wallpaper002.jpg');
       background-position: center top;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat; */
 
       /* AUTO É O PADRÃO */
       /* CONTAIN FAZ A IMAGEM SER TOTALMENTE CONTIDA NA VIEWPORT, SEM CORTES */
       /* COVER FAZ A IMAGEM COBRIR TOTALMENTE A VIEWPORT */
-      background-size: cover;
+      /* background-size: cover; */
       /* SCROLL É O PADRÃO */
       /* FIXED DEIXA FIXO */
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
+
+      /* SHORTHAND PRO BACKGROUND */
+      /* O JEITO DE FAZER O SIZE FUNCIONAR É FAZER POSITION/SIZE */
+      /* COLOR IMAGE POSITION/SIZE REPEAT ATTACHMENT */
+      background: black url('imagens/wallpaper002.jpg') center top/cover no-repeat fixed;
+      /* background-size: cover; */
     }
 
     main {
