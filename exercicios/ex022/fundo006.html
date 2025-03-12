@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fundo fixo de tela</title>
   <style>
     body {
       /* ALTURA DO BODY VAI SER 100% DA VIEWPORT (HEIGHT) */
@@ -18,11 +18,14 @@
       /* CONTAIN FAZ A IMAGEM SER TOTALMENTE CONTIDA NA VIEWPORT, SEM CORTES */
       /* COVER FAZ A IMAGEM COBRIR TOTALMENTE A VIEWPORT */
       background-size: cover;
+      /* SCROLL É O PADRÃO */
+      /* FIXED DEIXA FIXO */
+      background-attachment: fixed;
     }
 
     main {
       background-color: white;
-      width: 400px;
+      max-width: 400px;
       margin: auto;
       padding: 10px;
       border-radius: 15px;
