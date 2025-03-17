@@ -27,7 +27,8 @@ a:hover {
 }
 h1 {
   font-family: var(--fonte-titulo);
-  font-size: 8em;
+  /* font-size: 8em; */
+  font-size: 8vw;
 }
 h1 span {
   /* ESSA LINHA É NECESSÁRIA PRA FAZER O TRUQUE DO FIRST-LETTER FUNCIONAR */
@@ -52,16 +53,18 @@ main {
 
 section {
   padding: 30px;
+  padding-top: 10vh;
 }
 
 section p {
   display: block;
   width: fit-content;
-  font-size: 3.5em;
   padding: 5px;
   line-height: 2em;
   margin-top: 50px;
   margin-bottom: 100px;
+  /* font-size: 3.5em; */
+  font-size: 3.5vw;
 }
 
 section.paralaxe {
