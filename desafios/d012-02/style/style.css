@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+  --fonte1: Verdana, geneva, tahoma, sans-serif;
+  --fonte2: 'Passion One', cursive;
+  --fonte3: 'Sriracha', cursive;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -11,6 +17,7 @@
 html, body {
   min-height: 100vh;
   background-color: darkgray;
+  font-family: var(--fonte1);
 }
 
 header {
@@ -23,6 +30,9 @@ header > h1 {
   padding-top: 50px;
   /* FAZ COM QUE TODAS AS LETRAS TENHAM O ESTILO MAIÚSCULO, MAS OS TAMANHOS AINDA VARIAM */
   font-variant: small-caps;
+  font-family: var(--fonte2);
+  /* NÃO É O MELHOR JEITO DE FAZER UM TEXTO RESPONSIVO, MAS NÃO VIMOS MEDIA QUERIES AINDA */
+  font-size: 10vw;
 }
 
 header > p {
@@ -43,6 +53,9 @@ section {
   padding-bottom: 10vh;
   padding-left: 30px;
   line-height: 2em;
+  font-family: var(--fonte3);
+  /* NÃO É O MELHOR JEITO DE FAZER UM TEXTO RESPONSIVO, MAS NÃO VIMOS MEDIA QUERIES AINDA */
+  font-size: 3.5vw;
 }
 section.normal {
   background-color: white;
@@ -53,7 +66,9 @@ section.imagem {
   color: white;
 }
 section.imagem > p {
-  width: 400px;
+  /* width: 400px; */
+  display: inline-block;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.541);
 }
 
