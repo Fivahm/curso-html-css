@@ -12,6 +12,7 @@
     table {
       width: 600px;
       border-collapse: collapse;
+      position: relative; /* PARECE OPCIONAL */
     }
 
     td, th {
@@ -26,6 +27,13 @@
     thead, tfoot {
       background-color: gray;
       color: white;
+    }
+
+    /* SE TENTAR FAZER ISSO NO THEAD DIRETO ELE FICA SEM BORDER */
+    thead > tr > th {
+      position: sticky;
+      top: -1px; /* COM 0 FICA UM PIXEL CHATO EM CIMA */
+      background-color: gray; /* ELE NÃO LEVA OS FUNDOS (QUE SÃO DO THEAD) */
     }
 
     /* POSSIBILIDADES
@@ -184,6 +192,9 @@
       </tr>
     </tbody>
   </table>
+
+  <p>Este texto só está aqui para oferecer um espaço do rolagem para a página</p>
+  <p style="width: 400px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid sunt est voluptate ipsa commodi quae debitis illo sequi sed, exercitationem repellendus nam repellat cumque expedita consequatur facere saepe distinctio maiores! Assumenda, tempore? Eveniet corporis architecto rerum voluptates dolore laboriosam. Autem repellendus, iusto quisquam unde vitae deleniti facilis harum atque dolor dolore minima maxime pariatur voluptatibus nobis aperiam vel quasi numquam. Beatae alias nihil omnis, sed itaque esse suscipit praesentium optio aut asperiores assumenda animi maiores voluptas dolorum sapiente expedita rem voluptatem mollitia sint eos odio nobis ducimus cum dolor! Ipsa, cupiditate totam mollitia sit esse optio debitis! Veniam, repellat, repellendus provident obcaecati assumenda, commodi quae quasi amet odit numquam nemo natus? Consectetur, saepe odit? Perspiciatis beatae, ex fuga, qui sunt magni vitae quidem vero tenetur ipsum sint repellat consequatur autem laudantium. Sunt laudantium natus eveniet accusamus pariatur voluptas incidunt non, magnam molestiae odit ratione laboriosam consequuntur cupiditate corrupti recusandae iusto voluptate unde veritatis dicta ipsam doloremque corporis! Sunt laborum animi eaque, earum aut voluptatum libero deserunt delectus officia distinctio pariatur laudantium facilis, commodi ducimus ad incidunt inventore enim quos voluptas porro similique accusamus nemo suscipit nisi? Saepe, blanditiis doloribus. Nihil voluptate facere libero consequuntur accusamus, qui et assumenda, aliquam rerum eligendi sapiente molestiae architecto officiis. Dolores corporis eos ab iusto odio iure pariatur provident? Incidunt obcaecati quo fugiat libero sunt in aut, reprehenderit totam asperiores. Consectetur molestiae quis voluptatum laborum possimus doloremque amet ut, iure blanditiis. Voluptatibus, accusantium numquam? Culpa voluptas tenetur sunt, quod at dolorem ad libero tempora quam id, laudantium a illum vero facere harum vel quasi unde ipsum nam ratione? At laboriosam quod quos repellat, laborum, distinctio dicta veritatis asperiores impedit sequi itaque accusamus? Iste, esse provident vel itaque quod perspiciatis beatae optio delectus maiores placeat? Distinctio assumenda alias voluptates, fugit nesciunt repudiandae vel optio, dolorum exercitationem reprehenderit nam architecto vero maxime iste ad quaerat perferendis aperiam, natus minus nobis quas expedita harum perspiciatis? Harum quasi placeat beatae cupiditate repellendus qui! Iusto nulla, quidem omnis adipisci, a aperiam corporis iure exercitationem hic enim facilis doloremque ab molestiae est minima. Eos omnis aut nesciunt! Pariatur illo maiores sequi. Non, veritatis sunt deleniti molestias aperiam sed quibusdam eum in officia est, voluptates architecto, enim ea aut a id soluta quae provident dolorem voluptatem praesentium ab dicta sapiente unde! Neque, necessitatibus. Quos delectus sint necessitatibus numquam esse voluptate consequuntur, quasi in dolore, blanditiis cum maiores consequatur saepe accusantium magni mollitia voluptas repellendus consectetur ex quia ullam alias? Sint consectetur ducimus eligendi soluta quasi, doloribus laboriosam eum optio, fugit cum, suscipit esse eaque officiis ab voluptates beatae asperiores omnis minus ullam voluptatibus hic deserunt nostrum fuga? Error dolorum accusamus ut ad totam maiores minima illum eos quibusdam vero voluptatum eius blanditiis, iusto magnam sequi esse beatae. Ab, nemo expedita? Fuga, debitis dicta. Dicta assumenda cum, a ea optio odit ab alias sed est! Illo neque iste minus doloremque. Atque sed labore reiciendis maiores. Explicabo corporis, maxime laborum at quos fugit tenetur nam, numquam eligendi ad nostrum! Quo eligendi rem error.</p>
 </body>
 </html>
 
