@@ -27,6 +27,13 @@
       background-color: gray;
       color: white;
     }
+
+    caption {
+      background-color: gainsboro;
+      color: black;
+      font-weight: bold;
+      padding: 10px;
+    }
   </style>
 </head>
 
@@ -34,17 +41,20 @@
   <h1>Uso de tabelas grandes</h1>
   <p>Aula 29</p>
   <table>
+    <caption>
+      Populações dos estados brasileiros
+    </caption>
     <thead>
       <tr>
-        <th>Estado</th>
-        <th>População (2024 est.)</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 100px;">População (2024 est.)</th>
       </tr>
     </thead>
     <tfoot>
       <!-- NOTE QUE O FOOT NÃO PRECISA FICAR NO FINAL DENTRO DO HTML
        ELE VAI PRO FINAL DA TABELA SOZINHO NA PÁGINA -->
       <tr>
-        <th>Total</th>
+        <th scope="row">Total</th>
         <td class="num"><strong>212 583 750</strong></td>
       </tr>
     </tfoot>
